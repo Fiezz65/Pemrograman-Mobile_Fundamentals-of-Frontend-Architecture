@@ -4,10 +4,11 @@ Hari ini saya menyelesaikan Exercise 1: “Container Diagram”. Latihan ini mer
 
 ![Container Diagram](Container-Diagram.png)
 
-# Insight
+## Insight
 
 Dari latihan dan project spec pada GitHub, saya memahami bahwa Fullsnack System terdiri dari 3 aktor, yaitu driver, restoran, dan customer. Selain itu, ada beberapa container utama seperti Customer Web App yang dipakai pelanggan untuk memesan makanan, Restaurant Web App untuk restoran menerima dan memperbarui pesanan, dan Driver Mobile App untuk driver mengambil dan mengantar pesanan. Semua container ini berkomunikasi dengan Core API (Java Spring Boot), yang kemudian terhubung ke Core Database (MySQL) untuk menyimpan data, dan Websockets Server (Socket.io) untuk mengirim update secara real-time ke pengguna. Selain itu, Core API juga berfungsi sebagai penghubung ke sistem eksternal seperti Admin Systems untuk admin Fullsnack dan Third Party Payment untuk memproses transaksi. Insight utama saya adalah bahwa Container Diagram ini membantu saya melihat isi sistem secara lebih jelas, bukan hanya sekadar gambaran umum Fullsnack System seperti di level System Context.
 
 ## Impact
+
 
 Latihan ini membuat saya sadar bahwa membagi sistem ke dalam container itu benar-benar membantu tim. Dengan diagram ini, developer bisa jadi lebih gampang melihat container mana yang terhubung ke API, database, atau layanan lain di luar sistem. Menurut saya, membuat Container Diagram yang jelas itu penting banget, karena diagram ini jadi penghubung antara gambaran umum di level konteks dan detail yang lebih teknis di level komponen. Latihan ini juga membuat saya lebih kebayang bagaimana arsitektur sistem pesan-antar makanan seperti Fullsnack System ini bisa berjalan dalam kegunaannya sehari-hari.
